@@ -5,8 +5,6 @@ import time
 from datetime import datetime
 from functools import wraps
 
-import telegram.ext as tg
-
 # enable logging
 logging.basicConfig(
 	format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
