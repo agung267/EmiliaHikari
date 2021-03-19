@@ -147,7 +147,7 @@ def start(update, context):
             buttons = InlineKeyboardMarkup(
                 [[InlineKeyboardButton(text="🎉 Add me to your group", url="https://t.me/{}?startgroup=new".format(context.bot.username))],
                 [InlineKeyboardButton(text="💭 Language", callback_data="main_setlang"), InlineKeyboardButton(text="⚙️ Connect Group", callback_data="main_connect")],
-                [InlineKeyboardButton(text="👥 Support Group", url="https://t.me/EmiliaOfficial"), InlineKeyboardButton(text="🔔 Update Channel", url="https://t.me/AyraBotNews")],
+                [InlineKeyboardButton(text="👥 Support Group", url="https://t.me/republik_telegram"), InlineKeyboardButton(text="🔔 Update Channel", url="https://t.me/republik_telegram")],
                 [InlineKeyboardButton(text="❓ Help", url="https://t.me/{}?start=help".format(context.bot.username)), InlineKeyboardButton(text="💖 Donate", url="http://ayrahikari.github.io/donations.html")]])
             update.effective_message.reply_text(
                 tl(update.effective_message, PM_START_TEXT).format(escape_markdown(first_name), escape_markdown(context.bot.first_name), OWNER_ID),
@@ -155,7 +155,7 @@ def start(update, context):
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=buttons)
     else:
-        update.effective_message.reply_text(tl(update.effective_message, "Ada yang bisa saya bantu? 😊"))
+        update.effective_message.reply_text(tl(update.effective_message, "Mau apa?"))
 
 
 def m_connect_button(update, context):
@@ -288,7 +288,7 @@ def get_help(update, context):
     if chat.type != chat.PRIVATE:
 
         # update.effective_message.reply_text("Contact me in PM to get the list of possible commands.",
-        update.effective_message.reply_text(tl(update.effective_message, "Hubungi saya di PM untuk mendapatkan daftar perintah."),
+        update.effective_message.reply_text(tl(update.effective_message, "PM aja si"),
                                             reply_markup=InlineKeyboardMarkup(
                                                 [[InlineKeyboardButton(text=tl(update.effective_message, "Tolong"),
                                                                        url="t.me/{}?start=help".format(
