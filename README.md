@@ -21,6 +21,8 @@ Or [ask me in telegram](https://t.me/AyraHikari)! (Save all support questions in
 
 Note to maintainers that all schema changes will be found in the commit messages, and its their responsibility to read any new commits.
 
+Heroku
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/agung267/NISA.git)
 
 ## Starting the bot.
 
